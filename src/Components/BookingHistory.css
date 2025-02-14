@@ -1,0 +1,151 @@
+#booking-history-page-wrapper {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: flex-start; /* Align to the top */
+    height: 100vh; /* Ensure full viewport height */
+    width: 100vw; /* Ensure full viewport width */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    background-color: #fff;
+}
+
+.booking-history-page {
+    margin-top: 10%; /* Adjust top margin */
+    width: 80%; /* Set the container width to 80% of the screen */
+    max-width: 900px; /* Optionally, set a max-width to avoid stretching too much */
+    height: auto; /* Auto adjust height */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding in width and height calculation */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.booking-card {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.card-detail {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.card-detail strong {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-detail input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    margin-left: auto;
+    margin-top: -10px;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    margin-left: auto;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+    .booking-history-page {
+        padding: 10px;
+        width: 90%; /* Reduce width on smaller screens */
+    }
+
+    .card-header {
+        font-size: 1.2rem;
+    }
+
+    .card-detail input {
+        font-size: 0.9rem;
+    }
+}

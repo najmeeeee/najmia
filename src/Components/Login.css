@@ -1,0 +1,190 @@
+/* General reset */
+
+/* Container styling */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+#tt {
+    color: white;
+  }
+  #foot {
+    background-color: #222; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Add padding for better spacing */
+    position: fixed; /* Make footer stick to the bottom */
+    bottom: 0;
+    left: 0; /* Ensure it starts at the very left edge */
+    right: 0; /* Ensure it ends at the very right edge */
+    width: 100%; /* Full width */
+    font-size: 14px; /* Slightly smaller font */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+#header {
+    display: flex;
+    align-items: center; /* Vertically aligns the logo and title */
+    justify-content: space-between; /* Spaces logo and title apart */
+    padding: 10px 20px; /* Adjusts padding */
+    position: absolute; /* Keeps the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure header spans the entire width */
+    height: 80px; /* Fixed height for header */
+    background-color: rgba(194, 120, 157, 0.9); /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000; /* Ensures the header stays above other content */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevents logo container from shrinking */
+    width: auto; /* Ensures the logo doesn't force the header to expand */
+}
+
+#logo-img {
+    width: 20%; /* Set logo width */
+    height: 10; /* Maintain aspect ratio */
+   /* Keeps the logo within a fixed height */
+    object-fit: contain; /* Ensures logo stays inside its container */
+}
+
+
+
+/* Centering the form container */
+.login-form-container {
+    background: #175184;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    margin: 0 auto; /* This centers the container horizontally */
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for the container's height and width */
+}
+
+/* About Us section - New changes for layout */
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Left content - About Us text */
+.about-us-content {
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Space between text and image */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Image on the right */
+.about-us-image {
+    flex: 0 0 40%; /* Image takes up 40% of the container */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Break text into multiple lines with specific width for better readability */
+.about-us-content p {
+    word-wrap: break-word;
+}
+
+/* Styling for the "About Us" text */
+.about-us-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us-content p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/* Form styling */
+form input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: rgba(194, 120, 157, 0.9);
+    box-shadow: 0 0 5px rgba(130, 38, 84, 0.9);
+}
+
+form button {
+    background: rgba(115, 15, 65, 0.9) !important; /* Force the button to use this color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: rgba(194, 120, 157, 0.9) !important; /* Ensures the hover background color is also fixed */
+}
+
+
+/* Error message */
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Register link */
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #f447c3;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+.forgot-password-link {
+    text-align: center; /* Center the link */
+    margin-top: 15px; /* Add some space at the top */
+}
+
+.forgot-password-link a {
+    font-size: 16px; /* Set a comfortable font size */
+    color: #f447c3; /* Set a bright blue color for the link */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.forgot-password-link a:hover {
+    color: #ffffff; /* Change to a purple color on hover */
+    text-decoration: underline; /* Underline on hover */
+}

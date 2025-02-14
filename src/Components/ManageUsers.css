@@ -1,0 +1,124 @@
+/* Main container styling */
+#manage-users {
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* Clean white background */
+  color: #333; /* Dark gray text for readability */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for elegance */
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1000px; /* Adjusted for better content spacing */
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease-in-out;
+  text-align: center; /* Centers table content */
+}
+
+/* Heading styling */
+#manage-users-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222; /* Slightly darker for contrast */
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Loading and error messages */
+#loading-message,
+#error-message,
+#no-users-message {
+  font-size: 18px;
+  text-align: center;
+  color: #d9534f; /* Elegant red tone */
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+/* Table styling */
+#users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  background: #ffffff;
+}
+
+/* Header cell styling - Professional look */
+#users-table thead {
+  background: linear-gradient(90deg, #dc768f, #e5a454); /* Gradient blue-purple */
+}
+
+#users-table th {
+  color: #fff; /* White text for contrast */
+  font-weight: bold;
+  text-align: left;
+  padding: 16px 20px;
+  border-bottom: 3px solid #ddd;
+  font-size: 18px;
+}
+
+/* Table rows */
+#users-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Subtle gray background for even rows */
+}
+
+#users-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Clean white for odd rows */
+}
+
+#users-table tbody tr:hover {
+  background-color: #dbeafe; /* Light blue on hover for a modern effect */
+  color: #000; /* Dark text */
+  transition: 0.3s ease-in-out;
+}
+
+/* Table cell styling */
+#users-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Align table content properly */
+#users-table th, 
+#users-table td {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #manage-users {
+      padding: 20px;
+  }
+
+  #manage-users-heading {
+      font-size: 24px;
+  }
+
+  #users-table th,
+  #users-table td {
+      padding: 12px 10px;
+      font-size: 14px;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+

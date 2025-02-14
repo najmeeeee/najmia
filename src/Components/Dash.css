@@ -1,0 +1,486 @@
+:root {
+    --primary-color: #0a192f;
+    --accent-color: #ff69b4;
+    --text-color: #ffffff;
+    --gradient-overlay: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.95));
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+ 
+  
+  /* Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(10, 25, 47, 0.95);
+    padding: 1rem 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+  
+  .get-started-btn {
+    background-color: var(--accent-color);
+    color: var(--primary-color) !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .mobile-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    background-color: rgba(10, 25, 47, 0.95);
+    margin-top: 0;
+  }
+  
+  .hero-content {
+    z-index: 1;
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tagline {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .location {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  /* Countdown Container */
+  .countdown-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+  }
+  
+  .countdown-header {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .countdown-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-width: 100px;
+  }
+  
+  .countdown-value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .countdown-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .register-btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Events Section */
+.events {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  margin: 1rem auto;
+}
+
+/* Events Grid - Three Columns */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+  gap: 2rem;
+}
+
+/* Event Card */
+.event-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Card Hover Effect */
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Event Image */
+.event-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Event Content */
+.event-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Title */
+.event-content h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Event Details */
+.event-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Button Styling */
+.event-btn {
+  display: inline-block;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+}
+
+/* Button Hover Effect */
+.event-btn:hover {
+  transform: translateY(-2px);
+  background: var(--accent-color-dark); /* Darker shade for effect */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .events-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+      grid-template-columns: 1fr; /* 1 card per row on mobile */
+  }
+}
+
+  
+  .sponsor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image fills the card */
+    transform: scale(1.2); /* Scales up the image */
+}
+
+
+  
+.sponsors-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+}
+
+.sponsor-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    transition: transform 0.3s ease;
+    width: 300px;
+    flex-shrink: 0; /* Prevents shrinking when the screen is small */
+}
+
+  
+  .sponsor-card:hover {
+    transform: scale(1.05);
+  }
+ 
+ /* Contact Section */
+.contactda {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 3rem; /* Space between elements */
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Contact Container */
+.contactda-container {
+    background: rgba(201, 201, 216, 0.975);
+    border-radius: 15px;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between; /* Spreads elements evenly */
+    align-items: center; /* Aligns items in the center */
+    width: 100%;
+    flex-wrap: wrap; /* Prevents content from overflowing */
+}
+
+/* Contact Content */
+.contactda-content {
+    margin-top: 0; /* Remove the top margin for proper alignment */
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* Contact Info (now using flexbox) */
+.contactda-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Contact Details */
+.contactda-details {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center; /* Ensures icon and text align properly */
+}
+
+  
+  /* Footer */
+  footer {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 3rem 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center; /* Center all items */
+    align-items: center;
+    gap: 2rem; /* Adds spacing between sections */
+    padding: 2rem;
+ 
+  }
+  
+  .footer-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Centering the Logo */
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5; /* Make sure it doesn't take too much space */
+  }
+  
+  .footer-logo img {
+    width: 250px; /* Adjust for smaller size */
+    height: auto;
+  }
+  
+  
+  .footer-section ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .footer-section ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: var(--accent-color);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .countdown {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .countdown-item {
+      flex-basis: calc(50% - 1rem);
+    }
+  
+    .contact-container {
+      padding: 2rem;
+    }
+  
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+    /* Centering the Logo */
+  }
+  

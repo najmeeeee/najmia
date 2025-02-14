@@ -1,0 +1,158 @@
+/* General Styles */
+#admin-dashboard {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEF9E1;
+    color: #6D2323;
+    height: 100vh; /* Make sure it takes the full screen height */
+    width: 100vw; /* Ensure full width of the viewport */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent horizontal scroll */
+    margin-top: 7%;
+  }
+  #headadmin {
+    display: flex;
+    align-items: center; /* Vertically aligns the logo and title */
+    justify-content: space-between; /* Spaces logo and title apart */
+    padding: 10px 20px; /* Adjusts padding */
+    position: absolute; /* Keeps the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure header spans the entire width */
+    height: 80px; /* Fixed height for header */
+    background-color: rgba(151, 5, 19, 0.9); /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000; /* Ensures the header stays above other content */
+    overflow: hidden; /* Prevents content overflow */
+}
+ 
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Dashboard Layout */
+  .dashboard-layout {
+    display: flex;
+    height: 100%; /* Full screen */
+    flex-grow: 1; /* Ensures the layout uses full screen space */
+    overflow: hidden; /* Prevent scroll */
+    width: 100%; /* Ensure it takes full width */
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 200px;
+    background-color: #A31D1D;
+    color: #FEF9E1;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #6D2323;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: white; /* Set the link text color to white */
+    display: block; /* Make the link take the full space of the list item */
+  }
+  
+  .sidebar ul li a:hover {
+    color: #A31D1D; /* Change the text color on hover */
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #FEF9E1;
+    color: #A31D1D;
+  }
+  
+  /* Main Content */
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%; /* Ensure content fits */
+    width: 100%; /* Ensure it takes full width */
+  }
+  
+  /* Summary Tiles */
+  .summary-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tile {
+    background-color: #E5D0AC;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .tile h2 {
+    font-size: 2rem;
+    color: #A31D1D;
+  }
+  
+  .tile p {
+    font-size: 1rem;
+    color: #6D2323;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+  }
+  
+  .new-events {
+    border-top: 5px solid #F4A261;
+  }
+  
+  .participants {
+    border-top: 5px solid #2A9D8F;
+  }
+  
+  .sponsors {
+    border-top: 5px solid #E76F51;
+  }
+  
+  .widget {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove margins */
+    display: block; /* Block-level element to take full width */
+    float: left; /* Float the element to the left */
+  }
+  
+  
+  
+  
+  
+  

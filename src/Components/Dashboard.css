@@ -1,0 +1,582 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  height: 100%;
+}
+
+/* Main dashboard container */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%; /* Ensures the whole screen is utilized */
+}
+
+
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures logo on left and nav centered */
+  background-color: #fff;
+  color: #000000;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 90px; /* Adjust height if needed */
+}
+
+#logooo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+.navigation {
+  flex: 2; /* Gives it more space */
+  display: flex;
+  justify-content: center; /* Centers the menu */
+margin-right: 4%;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* Ensures full width */
+  gap: 2rem; /* Adds spacing between items */
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: blue; /* Adjust hover color */
+}
+
+#logoimg {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+}
+/* Navigation */
+.head .navigation {
+  flex-grow: 1; /* Allows the navigation to take the remaining space */
+  display: flex;
+  justify-content: center; /* Centers the navigation links horizontally */
+}
+
+.head .navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.head .navigation ul li a {
+  color: #000000;
+  text-decoration: none;
+  align-items: center;
+}
+
+.head .donate-button button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.head .donate-button button:hover {
+  background-color: #e64a19;
+}
+
+.hero {
+  position: relative;
+  height: calc(100vh - 70px); /* Subtract the header height */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 100px; /* Add extra margin to push the hero section down further */
+}
+
+.hero-video {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: auto; /* Maintain the aspect ratio */
+  height: auto; /* Maintain the aspect ratio */
+  min-width: 100%; /* Ensure the video spans the full width */
+  min-height: 100%; /* Ensure the video spans the full height */
+  transform: translate(-50%, -50%); /* Center the video */
+  object-fit: cover; /* Ensure the video covers the section */
+  z-index: -1; /* Keep the video in the background */
+}
+
+.hero-text {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 1; /* Ensure the text stays on top of the video */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Call-to-Action Section */
+.cta {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  margin-top: 2rem; /* Add space below hero */
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: auto;
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #704010;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 3rem 2rem; /* Reduced padding for closer content */
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+  justify-content: flex-start; /* Ensure image and content are aligned at the top */
+  width: 100%; /* Ensure the section takes full width */
+  gap: 1rem; /* Added gap for spacing between content */
+}
+
+/* About Us Section */
+.about-section {
+  background-color: #704010;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 3rem 2rem; /* Adjust padding for a compact layout */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* About Section Content */
+.about-text-wrap {
+  flex: 1;
+  padding-right: 1rem;
+  order: 1;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.services-info {
+  text-align: left;
+  max-width: 700px; /* Adjust width to prevent text from spreading too wide */
+  margin: auto; /* Centering block */
+}
+
+
+.services-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem; /* Reduced bottom margin */
+}
+
+.services-info p {
+  font-size: 1.1rem;
+  margin-top: 0.1rem; /* Reduced margin between paragraphs */
+  margin-bottom: 0.3rem; /* Reduced margin to bring paragraphs closer */
+}
+
+.services-info h6 {
+  font-size: 1.5rem;
+  margin-top: 0.3rem; /* Reduced margin between headings */
+  margin-bottom: 0.5rem; /* Reduced bottom margin */
+}
+
+/* Image Styling */
+.about-image {
+  position: absolute;
+
+  right: 10%;
+  top: 5%;
+  border-radius: 19px;
+  width: 30%;
+  max-height: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+/* Gallery Section */
+.artists-section {
+  padding: 60px 0;
+  background-color: #f1eaea;
+}
+
+.artists-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.artists-section .row {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Center the gallery items */
+  gap: 30px; /* Increase the gap for more spacing between items */
+  margin-top: 20px; /* Lower the entire gallery */
+}
+
+.artists-section .artists-thumb {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(236, 230, 230, 0.908);
+  width: 300px; /* Increase the width for enlargement */
+  height: 300px; /* Increase the height for enlargement */
+  margin-bottom: 20px; /* Add extra space below each image */
+}
+
+.artists-section .artists-image {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio and fill container */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Position captions above images */
+.artists-section .artists-thumb {
+  display: flex;
+  flex-direction: column-reverse; /* Moves caption above the image */
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Space between items */
+}
+
+.artists-section .artists-caption {
+  margin-bottom: 10px; /* Space between caption and image */
+  font-weight: bold;
+}
+
+/* Slightly enlarge all gallery images */
+.artists-section .artists-image {
+  width: 260px; /* Adjusted width */
+  height: 260px; /* Adjusted height */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Enlarge the first two images more */
+.artists-section .row .artists-thumb:nth-child(1) .artists-image,
+.artists-section .row .artists-thumb:nth-child(2) .artists-image {
+  width: 300px; /* Larger width for first two images */
+  height: 300px; /* Larger height for first two images */
+}
+
+/* Optional: Add hover effect for all images */
+.artists-section .artists-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+/* Hover Effect */
+.artists-section .artists-image:hover {
+  transform: scale(1.1);
+}
+
+.artists-section .artists-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.artists-section .artists-thumb:hover .artists-hover {
+  opacity: 1;
+}
+
+.artists-section .artists-hover p {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.artists-section .artists-hover a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.artists-section .artists-hover a:hover {
+  text-decoration: underline;
+}
+
+.artists-section .text-center {
+  margin-bottom: 30px;
+}
+
+.artists-section .text-center h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.gallery-heading {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #333; /* Change color based on your theme */
+  margin-bottom: 20px; /* Adds space between the heading and images */
+  text-align: center;
+  margin-top: -60px;
+ /* Centers the heading horizontally */
+}
+.artists-section {
+  padding-top: 50px; /* Adds space above the section */
+  padding-bottom: 50px; /* Adds space below the section */
+}
+
+ /* Contact Section */
+ .contact-section {
+  background-color: #173a72;
+  padding: 40px 0;
+
+  text-align: center;
+}
+
+.concon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  background-color: #173a72;
+  margin: auto;
+}
+
+.college-info {
+  flex: 1;
+  text-align: center;
+}
+
+.college-logo {
+  width: 180px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f1c40f;
+}
+
+.map-container {
+  flex: 2;
+}
+
+.contact-info {
+  flex: 0;
+  text-align: left;
+  line-height: 1;
+}
+
+.contact-info h3 {
+  color: #f1c40f;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #f1c40f;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: #11284a;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+.footer a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.powered-by {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.web-logo {
+  font-weight: bold;
+}
+
+.social-sidebar {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #11284a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.social-sidebar a {
+  display: block;
+  color: white;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-item {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Call to Action Section */
+.cta {
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+}
+
+.cta .cta-button {
+  background-color: #fff;
+  color: #e74c3c;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.cta .cta-button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+
+.section-title {
+  font-size: 38px;
+  color: #6D2323; /* Dark red */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #A31D1D; /* Red */
+  margin-bottom: 20px;
+
+}
+
+
+
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+}

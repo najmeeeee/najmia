@@ -1,0 +1,157 @@
+.eve-page {
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  min-height: 100vh; /* Ensure the page takes at least the full height of the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.background-video {
+  position: fixed; /* Ensures the video stays in place even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  object-fit: cover; /* Ensures the video covers the entire screen */
+  z-index: -1; /* Places the video behind all other content */
+  filter: brightness(70%); /* Optional: Add a dark overlay effect for better contrast */
+}
+#custom-header {
+  display: flex; /* Aligns logo and text horizontally */
+  justify-content: space-between; /* Places logo and text at opposite ends */
+  align-items: center; /* Centers the content vertically */
+ width: 105%;
+ height: 100%;
+  margin-top: -5%;
+  color: white; /* White text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow under header */
+}
+
+.eve-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px; /* Reduced margin to make space for marquee */
+}
+
+.scrolling-register-btn-container {
+  width: 100%;
+  margin-bottom: 20px; /* Adds space between marquee and events list */
+}
+
+marquee {
+  font-size: 24px;
+  color: #fff;
+  background-color: #333; /* Background for contrast */
+  padding: 10px 0; /* Adds vertical padding for a bigger marquee */
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.eve-container {
+  display: flex;
+  flex-direction: column; /* Stack the events vertically */
+  gap: 20px; /* Space between each event card */
+  width: 50%; /* Full width of the screen */
+}
+
+.eve-card {
+  position: relative; /* Set up for absolute positioning of the images */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Full width of the screen */
+  height: 600px; /* Set a height for better fitting */
+  overflow: hidden; /* Prevent images from spilling out */
+  text-align: center; /* Center the text inside the card */
+}
+
+.eve-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.eve-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.eve-image {
+  position: absolute;
+  width: 120px; /* Image size */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.eve-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; /* Center the content horizontally */
+  margin-top: -20; /* Ensure there's enough space for images */
+}
+
+.eve-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-meta {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+  text-align: center; /* Center the meta content */
+}
+
+.event-meta strong {
+  color: #333;
+}
+
+.event-meta ul {
+  list-style-position: inside; /* Move the bullet points inside */
+  padding-left: 20px; /* Add space between the bullet points and the text */
+  text-align: left; /* Align the list items to the left */
+  margin: 0 auto; /* Center the list itself */
+}

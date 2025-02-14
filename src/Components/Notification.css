@@ -1,0 +1,186 @@
+/* General Container */
+#notification-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  overflow: auto;
+  width: 100vw; /* Full width of the viewport */
+  max-width: 100%; /* Ensures it doesn't exceed screen width */
+  box-sizing: border-box; /* Include padding/borders in the width */
+  margin: 0; /* Remove any default margin if it's there */
+}
+
+/* Title */
+#notification-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Create New Notification Button */
+#create-notification-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #009688;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#create-notification-btn:hover {
+  background-color: #00796B;
+}
+
+/* Form Styles */
+#notification-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+}
+
+#form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Notification List Styles */
+#notifications-list {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notification-item {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.notification-item:hover {
+  background-color: #f5f5f5;
+}
+
+.notification-item h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+  flex-grow: 1;
+}
+
+.notification-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.notification-item small {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+/* Icon Styles */
+.notification-item .icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Action Buttons */
+.action-btn {
+  background-color: #FF5722;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+}
+
+.action-btn:hover {
+  background-color: #E64A19;
+}
+
+/* Form Submit Button */
+#submit-button,
+#cancel-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: #009688;
+  color: white;
+  width: 48%;
+}
+
+#submit-button:hover,
+#cancel-button:hover {
+  background-color: #00796B;
+}
+
+/* Back Button */
+#back-btn {
+  background-color: #FF5722;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#back-btn:hover {
+  background-color: #E64A19;
+}
